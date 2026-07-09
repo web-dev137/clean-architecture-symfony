@@ -4,54 +4,6 @@ The API of the matrix operation service. The services includes the following fun
 1)Multiply matrix.<br>
 2)Transponse matrix.<br>
 
-# Structure
-```scala
-src
-|   Kernel.php
-|   
-+---Common
-|   L---Query
-|           QueryBus.php
-|           QueryBusInterface.php
-|           QueryHandlerInterface.php
-|           QueryInterface.php
-|           
-L---Matrix
-    +---Application
-    |   +---DTO
-    |   |       MatrixOperationRequest.php
-    |   |       TwoMatrixOperationRequest.php
-    |   |       
-    |   L---Service
-    |       +---MatrixMultiply
-    |       |       MatrixMultiplyQuery.php
-    |       |       MatrixMultiplyQueryHandler.php
-    |       |       
-    |       L---MatrixTransponse
-    |               MatrixTransponseQuery.php
-    |               MatrixTransponseQueryHandler.php
-    |               
-    +---Domain
-    |   +---Entity
-    |   |       Matrix.php
-    |   |       
-    |   +---Factory
-    |   |       MatrixFactory.php
-    |   |       
-    |   +---Interfaces
-    |   +---Service
-    |   |       MatrixOperationsService.php
-    |   |       
-    |   L---Specification
-    |           MultiplyMatrixSpecification.php
-    |           
-    +---Infrastructure
-    |   L---Repository
-    L---Presintation
-        L---Controller
-                MatrixController.php
-```
-
 # Messanger config
 ```yaml
 framework:
