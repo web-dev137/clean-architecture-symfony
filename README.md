@@ -1,4 +1,4 @@
-This example onion architecture.<br>
+This example clean architecture.<br>
 The API of the matrix operation service. The services includes the following functional:<br>
 
 1)Multiply matrix.<br>
